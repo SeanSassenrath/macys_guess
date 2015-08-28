@@ -4,6 +4,7 @@ $(document).ready(function() {
   var productPrice;
   var gender;
   var offsetArray = [];
+  var productUrl;
 
   $("#guess-field").hide();
   $("#guess-submit").hide();
@@ -43,7 +44,7 @@ $(document).ready(function() {
   var changeButtonsToNext = function() {
     $("#guess-field").hide();
     $("#guess-submit").hide();
-    $("#guess-field-container").append("<button id='buy-item' class='button-style'>Buy</button>");
+    $("#guess-field-container").append("<a href=" + productUrl + "><button id='buy-item' class='button-style'>Buy</button></a>");
     $("#guess-submit-container").append("<button id='next-item' class='button-style'>Next</button>");
   }
 
@@ -84,6 +85,7 @@ $(document).ready(function() {
       console.log("Image ", response.products[0].price);
       var mediumImg = response.products[0].image.sizes.XLarge.url;
       var name = response.products[0].brandedName;
+      productUrl = response.products[0].pageUrl;
       productPrice = response.products[0].price;
       console.log("PRICE " + response.products[0].price);
       console.log("Product Price " + productPrice);
