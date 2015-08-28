@@ -14,27 +14,26 @@
   <header>
 
     <div>
-      <div class="row ">
+      <div class="row">
         <div class="small-12 columns">
-        <!-- nav bar -->
-          <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-              <li class="name">
-                <h1>
-                  <a class="txt-off-white txt-lato clear" id="title" href="#">Macy's Guess</a>
-                </h1>
-              </li>
-            </ul>
-
-            <section class="top-bar-section">
-              <!-- right nav section -->
-              <ul class="right">
-                <li class="bkg-none"><h6><a href="#about-us">About Us</a></h6></li>
+          <!-- nav bar -->
+            <nav class="top-bar" data-topbar role="navigation">
+              <ul class="title-area">
+                <li class="name">
+                  <h1>
+                    <a class="txt-off-white txt-lato clear" id="title" href="#"><img id="macys-logo" src="img/macys-logo.png"></a>
+                  </h1>
+                </li>
               </ul>
-            </section>
 
-          </nav>
-          </div>
+              <section class="top-bar-section">
+                <!-- right nav section -->
+                <ul class="right">
+                  <li><a href="#a"></a></li>
+                </ul>
+              </section>
+
+            </nav>
         </div>
       </div>
     </div>
@@ -43,6 +42,58 @@
 
   <main>
 
+    <div>
+      <div class="row">
+        <div class="small-12 columns debug">
+          <h3 id="head-line" style="color: white;">Macy's Price Guess!</h3>
+          <h6 id="instructions" style="color: white;">What clothes would you like to play with?</h6>
+          <!-- <h6 id="instructions">Can you guess the price of the item below?</h6> -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns debug" id="womens-choice-container">
+          <button id="womens-button">Womens</button>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="small-12 columns debug" id="mens-choice-container">
+          <button id="mens-button">Mens</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns debug" id="product-photo-container" style="background-color: white;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns debug" id="product-description" style="background-color: white;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns debug" id="message-container" style="background-color: white;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns debug" id="guess-field-container">
+          <form>
+            <input type="text" id="guess-field" placeholder="Your Guess!">
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns debug" id="guess-submit-container">
+          <button id="guess-submit">Guess!</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   </main>
 
