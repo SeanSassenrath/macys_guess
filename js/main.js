@@ -43,8 +43,8 @@ $(document).ready(function() {
   var changeButtonsToNext = function() {
     $("#guess-field").hide();
     $("#guess-submit").hide();
-    $("#guess-field-container").append("<button id='buy-item'>Buy</button>");
-    $("#guess-submit-container").append("<button id='next-item'>Next</button>");
+    $("#guess-field-container").append("<button id='buy-item' class='button-style'>Buy</button>");
+    $("#guess-submit-container").append("<button id='next-item' class='button-style'>Next</button>");
   }
 
   $(this).on("click", "#next-item", function() {

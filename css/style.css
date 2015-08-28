@@ -18,6 +18,16 @@ nav {
   background: none !important;
 }
 
+.button-style {
+  padding: 10px 50px 10px 50px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  background-color: #333333;
+  color: white;
+  border: 2px solid white;
+}
+
 #macys-logo {
   width: 200px;
 }
@@ -58,16 +68,6 @@ nav {
   background-color: #E6E6E6;
   display: block;
   border-radius: 2px;
-}
-
-#guess-submit {
-  padding: 10px 50px 10px 50px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 3px;
-  background-color: #333333;
-  color: white;
-  border: 2px solid white;
 }
 
 @media only screen and (max-width: 645px) {
