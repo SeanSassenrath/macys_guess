@@ -63,6 +63,8 @@ $(document).ready(function() {
     $("#message-container").empty();
     var userGuess = $("#guess-field").val();
     compareGuess(userGuess, productPrice);
+    $("#buy-item").remove();
+    $("#next-item").remove();
     changeButtonsToNext();
   })
 
