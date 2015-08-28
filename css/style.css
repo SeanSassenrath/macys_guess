@@ -7,7 +7,7 @@ body {
 }
 
 button:hover {
-  color: green !important;
+  color: black !important;
 }
 
 button, .button {
