@@ -1,21 +1,77 @@
+
+.row .row {
+  margin:0;
+}
+#main-container {
+  /*border-radius:15px;*/
+}
 .debug {
-  border: 1px solid red;
+  border: 1px solid #759FCD;
 }
 
-body {
-  background-color: #333333;
+.debug-rows {
+  border: 1px solid #dfd6ed;
 }
 
-/*button:hover {
-  color: black !important;
+/*background*/
+.bgc-black {
+  background-color: #282828;
 }
 
-button, .button {
-  color: white !important;
-}*/
+.bgc-white {
+  background-color: white !important;
+}
 
-nav {
-  background: none !important;
+/*padding*/
+.pt1{
+  padding-top: 1em;
+}
+.pt3 {
+  padding-top:3.5em;
+}
+.pb1{
+  padding-bottom: 1em;
+}
+
+/*text*/
+.ta-c {
+  text-align: center;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-black {
+  color: #282828 !important;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.thin {
+
+}
+
+.light {
+  font-weight: 300;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.button-black {
+  background: #282828;
+  color: white;
+  border: 2px solid white;
+}
+
+.button-black:hover {
+  background: #EAEAEA;
+  color: black;
+  border: 2px solid black;
 }
 
 .button-style {
@@ -27,8 +83,17 @@ nav {
   color: white;
   border: 2px solid white;
 }
+#product-photo-container {
 
-.button-style:hover {
+  height:500px;
+  background-color:white;
+  border-radius:10px;
+}
+#message-container {
+  color:#cc0000;
+}
+
+/*.button-style:hover {
   padding: 10px 50px 10px 50px;
   display: block;
   margin: 20px auto;
@@ -36,21 +101,24 @@ nav {
   background-color: white;
   color: black;
   border: 2px solid black;
-}
+}*/
 
 #macys-logo {
   width: 200px;
 }
-
-#head-line {
+#content-container {
+  display: none;
+  height:500px;
+}
+/*#head-line {
   text-align: center;
 }
 
 #instructions {
   text-align: center;
-}
+}*/
 
-#womens-button {
+/*#womens-button {
     display: block;
     margin: 50px auto;
     padding: 10px 100px;
@@ -68,18 +136,29 @@ nav {
     background-color: red;
     border: 3px solid red;
     color: white !important;
-}
-
+}*/
+/*.guess-container {
+  display:none;
+}*/
 #guess-field {
-  width: 150px;
-  padding: 23px;
-  margin: 25 auto;
-  text-align: center;
+  /*width: 150px;*/
   background-color: #E6E6E6;
-  display: block;
   border-radius: 2px;
+  /*display:none;*/
 }
+#guess-submit {
+  /*display:none;*/
+}
+.next-container {
 
+  display:none;
+}
+#results-container {
+  display:none;
+}
+#product-description {
+  color:#cc0000;
+}
 @media only screen and (max-width: 645px) {
   #macys-logo {
     margin-top: 5px;
