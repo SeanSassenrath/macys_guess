@@ -110,6 +110,29 @@ button:hover, .button {
   display: block;
 }
 
+/*other*/
+.top-bar .toggle-topbar.menu-icon a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 16px;
+  top: 0;
+  height: 0;
+  -webkit-box-shadow: 1px 10px 1px 1px #282828, 1px 16px 1px 1px #282828, 1px 22px 1px 1px #282828;
+  box-shadow: 0 10px 0 1px #282828, 0 16px 0 1px #282828, 0 22px 0 1px #282828;
+}
+.top-bar .toggle-topbar.menu-icon a {
+  color: blue;
+  height: 100px;
+  line-height: 50px;
+  padding: 0 2.5rem 0 0.9375rem;
+  position: relative;
+}
+li.name {
+    color: #888888;
+    background-color: white !important;
+}
 #product-photo-container {
   height: 525px;
   background-color: white;
@@ -139,7 +162,7 @@ button:hover, .button {
   display: none;
 }
 #guess-field {
-  background-color: #E6E6E6;
+  background-color: white;
   border-radius: 2px;
 }
 .next-container {
@@ -155,6 +178,24 @@ button:hover, .button {
   display: block;
   margin:0 auto;
   max-height: 350px;
+}
+#about-us-area {
+  display: none;
+}
+::-webkit-input-placeholder {
+   color: #777777;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #777777;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #777777;
+}
+
+:-ms-input-placeholder {
+   color: #777777;
 }
 @media only screen and (max-width: 645px) {
   #macys-logo {

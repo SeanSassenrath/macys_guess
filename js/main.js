@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(document).foundation();
   console.log("main.js has been found");
 
   var productsArray = [];
@@ -7,9 +8,11 @@ $(document).ready(function() {
 
   $(".button-select").on("click", function() {
     gender = $(this).attr("id");
-    introTransition();
-
+    $('.action-buttons').hide();
+    productsArray = [];
+    $('.product').empty();
     getItem();
+    introTransition();
     displayProduct();
   })
 
@@ -29,6 +32,24 @@ $(document).ready(function() {
     displayProduct();
   });
 
+  $("#about-us-button").on("click", function() {
+    $(".m-section").toggle()
+    if($(this).text() === "About The App") {
+      $(this).html("Start Game");
+    } else {
+      $(this).html("About The App")
+    }
+    // if(aboutUsShowing === false) {
+    //   $("#game-container").hide()
+    //   $("#about-us-area").show();
+    //   aboutUsShowing = true;
+    // } else {
+    //   $("#about-us-area").hide();
+    //   $("#game-container").show()
+    //   aboutUsShowing = false;
+    // }
+  })
+
   var introTransition = function() {
     $(".welcome-txt").hide();
     $("#content-container").show();
@@ -47,11 +68,9 @@ $(document).ready(function() {
     }).done(function(response){
       for(var i = 0; i < response.products.length; i++) {
         productsArray.push(response.products[i]);
-        console.log(productsArray);
       }
-      console.log(response)
+      console.log("Success ", response)
       displayProduct();
-      // $("product-photo-container").append("<img src=" + mediumImg + ">")
     }).fail(function(response) {
       console.log("Failed ", response);
     });
