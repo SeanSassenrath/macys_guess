@@ -14,8 +14,8 @@
 
   <header>
 
-      <div class="row debug-rows pt1 pb1">
-        <div class="small-12 columns debug">
+      <div class="row pt1 pb1">
+        <div class="small-12 columns">
           <!-- nav bar -->
             <nav class="top-bar bgc-white" data-topbar role="navigation">
               <ul class="title-area">
@@ -37,88 +37,63 @@
 
   </header>
 
-  <main>
-    <div class="row">
-      <div class="small-12 columns bgc-black" id="main-container">
-
-        <div class="row" id="intro-container">
-          <div class="small-12 columns">
-            <div class="row debug-rows">
-              <div class="small-5 small-centered columns debug">
-                <h6 class="roboto light text-center c-white">WELCOME TO</h6>
-                <h1 class="roboto medium text-center c-white">Macy's Price Guess!</h1>
-              </div>
-            </div>
-            <div class="row debug-rows">
-              <div class="small-8 small-centered columns debug">
-                <h4 class="roboto light text-center c-white">Select which clothes to play with</h4>
-              </div>
-            </div>
-              <!-- <h6 id="instructions">Can you guess the price of the item below?</h6> -->
-            </div>
-          <div class="row debug-rows pt1 pb1 bgc-black ">
-            <div class="small-6 columns debug" id="womens-choice-container">
-              <button class="right button-black button-select" id="womens+dresses">Womens</button>
-            </div>
-            <div class="small-6 columns debug" id="mens-choice-container">
-              <button class="button-black button-select" id="mens+shirts">Mens</button>
-            </div>
+  <main class="bgc-black">
+    <div class="row pt2">
+      <div class="small-12 columns bgc-black intro-container">
+          <div class="small-12 medium-5 small-centered columns">
+            <h6 class="roboto light text-center c-white">WELCOME TO</h6>
+            <h1 class="roboto medium text-center c-white">Macy's Price Guess!</h1>
           </div>
-        </div>
-
-        <div id="content-container" class="row">
-            <div class="small-12 columns">
-              <div class="row debug-rows">
-                <div class="small-8 large-6 small-centered columns pt3" id="product-photo-container">
-                  <img class="product" style='display: block; margin:0 auto; max-height: 350px;'/>
-                  <h4 class="product text-center" style="display:inline-block; vertical-align:baseline;" id="product-description" style="color:#cc0000"></h4>
-                </div>
-                <!-- <div class="row debug-rows">
-                <div class="small-12 columns debug product" id="product-description" style="background-color: white;">
-                  <h3 class="product" id="product-description"></h3>
-                </div>
-              </div> -->
-              </div>
-
-            </div>
-          </div>
-          <div class="row" id="results-container">
-            <div class="small-12 columns">
-                <div class="row">
-                  <div class="small-6 small-centered columns debug product" id="message-container">
-                  </div>
-                </div>
-                <div class="row debug-rows guess-container">
-                  <div class="small-3 small-centered columns debug" id="guess-field-container">
-                    <div class="row debugs-rows">
-                      <div class="small-9 small-centered columns debug">
-                        <form>
-                          <input type="text" id="guess-field" class="right-label" placeholder="Your Guess!">
-                        </form>
-                      </div>
-                    </div>
-                    <div class="row debug-rows">
-                      <div class="small-12 small-centered columns debug" id="guess-submit-container">
-                        <button id="guess-submit" class="button-style">Guess!</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-            <div class="row debug-rows next-container">
-              <div class="small-6 right columns debug">
-                    <button id="buy" class="button-style">BUY</button>
-              </div>
-              <div class="small-6 columns left debug" id="guess-submit-container">
-                    <button id="next" class="button-style">NEXT</button>
-              </div>
-            </div>
-           </div>
-        </div>
       </div>
     </div>
-
+    <div class="row intro-container">
+      <div class="small-8 small-centered columns">
+        <h4 class="roboto light text-center c-white">Select which clothes to play with</h4>
+      </div>
+    </div>
+    <div class="row pt1 intro-container">
+      <div class="small-6 columns" id="womens-choice-container">
+        <button class="right small button-black button-select" id="womens+dresses">Womens</button>
+      </div>
+      <div class="small-6 columns" id="mens-choice-container">
+         <button class="button-black small button-select" id="mens+shirts">Mens</button>
+      </div>
+    </div>
+    <div id="content-container" class="row">
+      <div class="small-8 large-6 small-centered columns pt3" id="product-photo-container">
+        <img class="product text-center"/>
+        <h4 class="product text-center" style="display:inline-block; vertical-align:baseline;" id="product-description" style="color:#cc0000"></h4>
+      </div>
+    </div>
+    <div class="row" id="results-container">
+      <div class="small-12 score-message small-centered columns product" id="message-container">
+        <h3 class="text-center win"></h3>
+        <h3 class="text-center lose"></h3>
+        <h5 class="text-center actual-price"></h5>
+      </div>
+    </div>
+    <div class="row guess-container">
+      <div class="medium-2 small-5 small-centered columns" id="guess-field-container">
+        <form>
+          <input type="text" id="guess-field" class="right-label" placeholder="Your Guess!">
+        </form>
+      </div>
+    </div>
+    <div class="row guess-container">
+      <div class="small-6 small-centered columns">
+        <button id="guess-submit" class="button-style text-centered">Guess!</button>
+      </div>
+    </div>
+    <div class="row pt1">
+      <div class="small-6 columns action-buttons">
+        <button class="right small button-black">BUY</button>
+      </div>
+      <div class="small-6 columns action-buttons">
+         <button class="button-black small" id="next">NEXT</button>
+      </div>
+    </div>
   </main>
+
 
 
   <footer>

@@ -18,7 +18,7 @@ $(document).ready(function() {
   })
 
   $("#next").on("click", function() {
-    $('.next-container').hide();
+    $('.action-buttons').hide();
     $('.guess-container').show();
     $('.product').empty();
     currentProduct += 1;
@@ -64,17 +64,18 @@ $(document).ready(function() {
   var submitGuess = function() {
     var userGuess = $("#guess-field").val();
     $('.guess-container').hide();
-    $('.next-container').show();
+    $('.action-buttons').show();
     compareGuess(userGuess, productsArray[currentProduct].price);
   }
   var compareGuess = function(guess, actualPrice) {
     var lowPriceRange = (actualPrice - (actualPrice * .20));
     var highPriceRange = (actualPrice + (actualPrice * .20));
     if((guess > lowPriceRange) && (guess < highPriceRange)) {
-      $("#message-container").append("<h3 style='text-align: center;'>You Win!</h3><h5 style='text-align: center;'>Actual Price: $" + actualPrice + "<h5>")
+      $(".win").html("You Win!")
     } else {
-      $("#message-container").append("<h3 style='text-align: center;'>You Lose</h3><h5 style='text-align: center;'>Actual Price: $" + actualPrice + "<h5>")
+      $(".lose").html("You Lose!")
     }
+    $(".actual-price").html("$ " + actualPrice)
   };
 
 });
