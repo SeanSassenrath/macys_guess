@@ -14,21 +14,25 @@ $(document).ready(function() {
   })
 
   $("#guess-submit").on("click", function() {
+    console.log('submitting guess')
     submitGuess();
+    $("#results-container").show();
+    $("#guess-field").val("");
   })
 
   $("#next").on("click", function() {
     $('.action-buttons').hide();
+    $('#results-container').hide();
     $('.guess-container').show();
     $('.product').empty();
     currentProduct += 1;
     displayProduct();
   });
 
-
   var introTransition = function() {
+    $(".welcome-txt").hide();
     $("#content-container").show();
-    $("#results-container").show();
+    $(".guess-container").show();
   }
   var getItem = (function() {
     var offset = Math.floor(Math.random() * 1000);
@@ -59,6 +63,7 @@ $(document).ready(function() {
     productUrl = productsArray[currentProduct].pageUrl;
     $("#product-photo-container img").attr('src', xLargeImg);
     $("#product-description").html(name)
+    $("#buy-button").attr('href', productsArray[currentProduct].pageUrl);
   })
 
   var submitGuess = function() {

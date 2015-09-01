@@ -39,7 +39,7 @@
 
   <main class="bgc-black">
     <div class="row pt2">
-      <div class="small-12 columns bgc-black intro-container">
+      <div class="small-12 columns bgc-black intro-container welcome-txt">
           <div class="small-12 medium-5 small-centered columns">
             <h6 class="roboto light text-center c-white">WELCOME TO</h6>
             <h1 class="roboto medium text-center c-white">Macy's Price Guess!</h1>
@@ -51,29 +51,29 @@
         <h4 class="roboto light text-center c-white">Select which clothes to play with</h4>
       </div>
     </div>
-    <div class="row pt1 intro-container">
+    <div class="row pt1 pb1 intro-container">
       <div class="small-6 columns" id="womens-choice-container">
         <button class="right small button-black button-select" id="womens+dresses">Womens</button>
       </div>
       <div class="small-6 columns" id="mens-choice-container">
-         <button class="button-black small button-select" id="mens+shirts">Mens</button>
+         <button class="button-black small button-select" id="mens+shirts" style="padding: 1em 3.1em 1.1em 3.2em;">Mens</button>
       </div>
     </div>
     <div id="content-container" class="row">
       <div class="small-8 large-6 small-centered columns pt3" id="product-photo-container">
-        <img class="product text-center"/>
-        <h4 class="product text-center" style="display:inline-block; vertical-align:baseline;" id="product-description" style="color:#cc0000"></h4>
+        <img class="product d m-a"/>
+        <h5 class="product text-center" style="vertical-align:baseline;" id="product-description" style="color:#cc0000"></h5>
       </div>
     </div>
     <div class="row" id="results-container">
-      <div class="small-12 score-message small-centered columns product" id="message-container">
-        <h3 class="text-center win"></h3>
-        <h3 class="text-center lose"></h3>
-        <h5 class="text-center actual-price"></h5>
+      <div class="small-12 score-message small-centered columns pt2" id="message-container">
+        <h3 class="text-center product c-white win"></h3>
+        <h3 class="text-center product c-white lose"></h3>
+        <h5 class="text-center product c-white actual-price"></h5>
       </div>
     </div>
-    <div class="row guess-container">
-      <div class="medium-2 small-5 small-centered columns" id="guess-field-container">
+    <div class="row guess-container pt2">
+      <div class="medium-2 small-5 small-centered columns pt1" id="guess-field-container">
         <form>
           <input type="text" id="guess-field" class="right-label" placeholder="Your Guess!">
         </form>
@@ -81,12 +81,12 @@
     </div>
     <div class="row guess-container">
       <div class="small-6 small-centered columns">
-        <button id="guess-submit" class="button-style text-centered">Guess!</button>
+        <button id="guess-submit" class="button-style button-black text-centered">Guess!</button>
       </div>
     </div>
-    <div class="row pt1">
+    <div class="row pt1 pb2">
       <div class="small-6 columns action-buttons">
-        <button class="right small button-black">BUY</button>
+        <a href="" id="buy-button"><button class="right small button-black">BUY</button></a>
       </div>
       <div class="small-6 columns action-buttons">
          <button class="button-black small" id="next">NEXT</button>
