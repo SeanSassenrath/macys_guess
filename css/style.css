@@ -177,7 +177,7 @@ li.name {
 #prodcut-photo-container img{
   display: block;
   margin:0 auto;
-  max-height: 350px;
+  max-height: 300px;
 }
 #about-us-area {
   display: none;
