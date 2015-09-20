@@ -39,15 +39,6 @@ $(document).ready(function() {
     } else {
       $(this).html("About The App")
     }
-    // if(aboutUsShowing === false) {
-    //   $("#game-container").hide()
-    //   $("#about-us-area").show();
-    //   aboutUsShowing = true;
-    // } else {
-    //   $("#about-us-area").hide();
-    //   $("#game-container").show()
-    //   aboutUsShowing = false;
-    // }
   })
 
   var introTransition = function() {
@@ -60,7 +51,7 @@ $(document).ready(function() {
     console.log(offset);
     $.ajax({
     type: "GET",
-    url: "http://api.shopstyle.com/api/v2/products?pid=uid209-31161703-45&fts=" + gender + "&fl=r2&offset=" + offset + "&limit=20&format=jsonp",
+    url: "http://api.shopstyle.com/api/v2/products?pid=uid1601-31414199-94&fts=" + gender + "&fl=r2&offset=" + offset + "&limit=20&format=jsonp",
     dataType: "jsonp",
     cache: false,
     crossDomain: true,
